@@ -43,8 +43,8 @@ public class aProductos extends javax.swing.JInternalFrame implements PropertyCh
         }
         
         deposito = 0;
-        if(!tDeposito.getText().trim().isEmpty()){
-            deposito = Integer.valueOf(tDeposito.getText().trim());
+        if(!tDeposi.getText().trim().isEmpty()){
+            deposito = Integer.valueOf(tDeposi.getText().trim());
         }
         
         query =   "select itm_cod, itm_des,itm_act,itm_pr1, ppd_dep, ppd_act "
@@ -65,7 +65,7 @@ public class aProductos extends javax.swing.JInternalFrame implements PropertyCh
     public void limpiar(Boolean full){
         if(full){
             tCantidadMinima.setText("");
-            tDeposito.setText("");
+            tDeposi.setText("");
             //fechaSelector.setSelectedIndex(0);
         }
         
@@ -92,7 +92,7 @@ public class aProductos extends javax.swing.JInternalFrame implements PropertyCh
         jTable1 = new javax.swing.JTable();
         eMensaje = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
-        tDeposito = new javax.swing.JTextField();
+        tDeposi = new javax.swing.JTextField();
         jLabel19 = new javax.swing.JLabel();
         tCantidadMinima = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
@@ -140,10 +140,10 @@ public class aProductos extends javax.swing.JInternalFrame implements PropertyCh
 
         eMensaje.setPreferredSize(new java.awt.Dimension(40, 25));
 
-        jLabel17.setText("Depósit");
+        jLabel17.setText("Depósito");
         jLabel17.setPreferredSize(new java.awt.Dimension(120, 25));
 
-        tDeposito.setPreferredSize(new java.awt.Dimension(80, 25));
+        tDeposi.setPreferredSize(new java.awt.Dimension(80, 25));
 
         jLabel19.setText("Cantidad mínima");
         jLabel19.setPreferredSize(new java.awt.Dimension(120, 25));
@@ -165,7 +165,7 @@ public class aProductos extends javax.swing.JInternalFrame implements PropertyCh
                             .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(29, 29, 29)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(tDeposito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tDeposi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(tCantidadMinima, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -178,7 +178,7 @@ public class aProductos extends javax.swing.JInternalFrame implements PropertyCh
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tDeposito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tDeposi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -268,25 +268,25 @@ public class aProductos extends javax.swing.JInternalFrame implements PropertyCh
                                             .addGap(18, 18, 18)
                                             .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(jPanel2Layout.createSequentialGroup()
-                                            .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 153, Short.MAX_VALUE)
-                                            .addGap(61, 61, 61))
-                                        .addGroup(jPanel2Layout.createSequentialGroup()
-                                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addGap(61, 61, 61))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
-                                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                .addGroup(jPanel2Layout.createSequentialGroup()
+                                                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addGap(18, 18, 18)
+                                                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 153, Short.MAX_VALUE))
+                                                .addGroup(jPanel2Layout.createSequentialGroup()
+                                                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addGap(18, 18, 18)
+                                                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
+                                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addGap(18, 18, 18)
+                                                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                                             .addGap(61, 61, 61)))
                                     .addGroup(jPanel2Layout.createSequentialGroup()
                                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
                                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(0, 457, Short.MAX_VALUE))
+                                .addGap(0, 447, Short.MAX_VALUE))
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
@@ -295,8 +295,7 @@ public class aProductos extends javax.swing.JInternalFrame implements PropertyCh
                         .addGap(11, 11, 11)
                         .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, 669, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, 660, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -386,7 +385,7 @@ public class aProductos extends javax.swing.JInternalFrame implements PropertyCh
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField tCantidadMinima;
-    private javax.swing.JTextField tDeposito;
+    private javax.swing.JTextField tDeposi;
     // End of variables declaration//GEN-END:variables
 
     @Override
