@@ -140,7 +140,7 @@ public class aProductos extends javax.swing.JInternalFrame implements PropertyCh
 
         eMensaje.setPreferredSize(new java.awt.Dimension(40, 25));
 
-        jLabel17.setText("Depósito");
+        jLabel17.setText("Depósit");
         jLabel17.setPreferredSize(new java.awt.Dimension(120, 25));
 
         tDeposito.setPreferredSize(new java.awt.Dimension(80, 25));
