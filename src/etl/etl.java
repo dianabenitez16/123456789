@@ -248,7 +248,7 @@ public class etl extends JFrame {
         });
         jMenu1.add(jMenuItem1);
 
-        jMenuItem2.setText("Clientes");
+        jMenuItem2.setText("Cliente");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem2ActionPerformed(evt);
